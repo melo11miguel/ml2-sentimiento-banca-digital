@@ -8,6 +8,7 @@
 \usepackage[most]{tcolorbox}
 \usepackage[hidelinks]{hyperref}
 \usepackage{microtype}
+\usepackage{needspace}
 
 % Estado de la anotación humana. \kappatrue solo cuando las hojas ciegas estén
 % anotadas por los dos integrantes y src/07_kappa.py haya dado la cifra real.
@@ -95,7 +96,8 @@ siguientes son la \textbf{prueba final}, que usamos una vez. Dejamos esa regla e
 antes de ver un solo resultado.
 
 \subsection{Selección y configuración definitiva}
-La CV anidada de la Entrega 2 (Tabla~\ref{tab:anidada}) eligió la familia: la regresión logística
+La CV anidada de la Entrega 2 (Tabla~\ref{tab:anidada}), que evita el sesgo de evaluar con los mismos
+datos que eligieron los hiperparámetros \cite{cawley}, eligió la familia: la regresión logística
 sobre caracteres tuvo el mayor F1 macro sobre el oro, con el bucle interno eligiendo $C=0{,}3$ en 4
 de 5 pliegues; el stacking quedó empatado dentro de una desviación estándar, pero tarda casi tres
 veces más y no se interpreta directamente, y CatBoost fue el árbol más estable. Con ese desempeño
@@ -184,6 +186,7 @@ Interpretabilidad & Ninguna & SHAP por palabra, global y por reseña \\
 \end{tabularx}
 \end{table}
 
+\needspace{8\baselineskip}
 \section{Interpretación de resultados}
 Para leer un modelo que trabaja con fragmentos de caracteres usamos SHAP sobre el texto
 \cite{shap}: el explicador quita palabras completas y mide cuánto cambia la probabilidad de cada
@@ -244,7 +247,7 @@ desempeño en la prueba temporal y advierte que es un instrumento de monitoreo y
 autónomo.
 
 La coherencia entre entrenamiento y uso está garantizada por construcción y verificada. El archivo
-\texttt{models/modelo\_final.joblib} contiene un único \texttt{Pipeline} que incluye la
+\texttt{models/modelo\_final.joblib} contiene un único \texttt{Pipeline} de scikit-learn \cite{sklearn} que incluye la
 normalización y el enmascaramiento, de modo que la aplicación no reimplementa ningún paso. Al
 guardarlo, el script comprueba que sus predicciones sobre el texto crudo de las 291 reseñas de
 prueba son idénticas a las del modelo evaluado, y el proceso se detiene si alguna difiere. También
@@ -253,6 +256,7 @@ explicación y aviso ante un texto vacío). Se ejecuta con
 \texttt{.venv/bin/streamlit run app/app.py} tras instalar \texttt{requirements.txt}, como describe
 el README del repositorio.
 
+\needspace{8\baselineskip}
 \section{Calidad, limitaciones y proyección}
 \textbf{Etiquetas.} Es la limitación principal.
 \ifkappa

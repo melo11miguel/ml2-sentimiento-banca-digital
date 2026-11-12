@@ -124,3 +124,7 @@ SVM char          ponderacion  F1m_oro=0.584±0.009 F1conf=0.316
   warnings.warn(
 /Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/base.py:474: FutureWarning: `BaseEstimator._validate_data` is deprecated in 1.6 and will be removed in 1.7. Use `sklearn.utils.validation.validate_data` instead. This function becomes public and is part of the scikit-learn developer API.
   warnings.warn(
+/Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/base.py:474: FutureWarning: `BaseEstimator._validate_data` is deprecated in 1.6 and will be removed in 1.7. Use `sklearn.utils.validation.validate_data` instead. This function becomes public and is part of the scikit-learn developer API.
+  warnings.warn(
+SVM char          smote        F1m_oro=0.622±0.012 F1conf=0.435
+SVM palabra_char  ninguno      F1m_oro=0.485±0.027 F1conf=0.060
