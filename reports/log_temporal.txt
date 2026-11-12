@@ -19,3 +19,22 @@ Experimento 6: prueba temporal (una sola vez)
   Protocolo del artículo (voto duro)       (91s)
   Reg. logística por defecto (línea base)  (5s)
   Mayoría (línea base)                     (1s)
+                                      modelo  f1_macro  f1_macro_ic_inf  f1_macro_ic_sup  f1_conflicto  exactitud
+                 Regresión logística (final)     0.889            0.832            0.936         0.784      0.928
+                                    Stacking     0.896            0.840            0.941         0.786      0.935
+                                    CatBoost     0.839            0.767            0.899         0.636      0.918
+          Protocolo del artículo (voto duro)     0.668            0.613            0.736         0.143      0.893
+     Reg. logística por defecto (línea base)     0.619            0.600            0.635         0.000      0.887
+                        Mayoría (línea base)     0.214            0.197            0.232         0.000      0.474
+Regresión logística sin enmascarar entidades     0.892            0.834            0.938         0.784      0.931
+                                      modelo   entidad   n  f1_macro  exactitud
+                 Regresión logística (final) DaviPlata 104     0.743      0.952
+                 Regresión logística (final)     Nequi  63     0.890      0.905
+                 Regresión logística (final)        Nu 124     0.856      0.919
+Regresión logística sin enmascarar entidades DaviPlata 104     0.769      0.962
+Regresión logística sin enmascarar entidades     Nequi  63     0.890      0.905
+Regresión logística sin enmascarar entidades        Nu 124     0.856      0.919
+[[127   7   4]
+ [  3 123   1]
+ [  0   6  20]]
+Modelo de despliegue guardado; coincide con el evaluado en las 291 reseñas de prueba.

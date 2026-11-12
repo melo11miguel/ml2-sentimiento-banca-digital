@@ -1,0 +1,28 @@
+{
+ "variante": "oro + débil",
+ "C": 0.3,
+ "corte": "2026-10-30 06:56:15",
+ "n_prueba": 291,
+ "confusion": [
+  [
+   127,
+   7,
+   4
+  ],
+  [
+   3,
+   123,
+   1
+  ],
+  [
+   0,
+   6,
+   20
+  ]
+ ],
+ "clases": [
+  "negativa",
+  "positiva",
+  "conflicto"
+ ]
+}

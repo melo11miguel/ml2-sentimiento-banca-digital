@@ -1,0 +1,4 @@
+SHAP de 291 reseñas en 5450s
+negativa [['mala', 8, 0.213], ['pesima', 7, 0.211], ['no', 134, 0.182], ['solucionar', 5, 0.133], ['intentando', 7, 0.127], ['abre', 14, 0.121], ['deja', 49, 0.115], ['ingresar', 25, 0.111], ['mal', 6, 0.11], ['solucion', 10, 0.106]]
+positiva [['excelente', 34, 0.209], ['gracias', 16, 0.185], ['mejor', 10, 0.155], ['facil', 20, 0.145], ['gusta', 10, 0.142], ['encanta', 9, 0.123], ['bien', 19, 0.11], ['muy', 69, 0.109], ['super', 10, 0.103], ['practica', 9, 0.093]]
+conflicto [['pero', 35, 0.366], ['solo', 19, 0.142], ['unico', 5, 0.139], ['bien', 19, 0.128], ['buena', 30, 0.082], ['ultimamente', 6, 0.073], ['bueno', 5, 0.066], ['tiene', 8, 0.065], ['hasta', 9, 0.055], ['que', 99, 0.041]]

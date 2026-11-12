@@ -13,6 +13,7 @@ Salidas: reports/shap_global.csv, reports/shap_ejemplos.csv,
 """
 from collections import defaultdict
 import json
+import sys
 import time
 import warnings
 
@@ -92,38 +93,55 @@ def elegir_ejemplos(pred):
 
 
 def fig_local(sv, pred, ejemplos, modelo):
+    """Guarda los aportes de los ejemplos y dibuja la figura."""
     filas = []
-    fig, axs = plt.subplots(len(ejemplos), 1, figsize=(6.8, 1.05 * len(ejemplos) + 0.4))
-    axs = np.atleast_1d(axs)
-    norm = TwoSlopeNorm(vcenter=0, vmin=-0.3, vmax=0.3)
-    cmap = plt.get_cmap("PiYG")
-    k_conf = CLASES.index("conflicto")
-    for ax, (titulo, i) in zip(axs, ejemplos):
+    for titulo, i in ejemplos:
         r = pred.loc[i]
-        prob = modelo.predict_proba([r.texto])[0]
-        ax.axis("off")
-        ax.set_title(f"{titulo}: anotada {r.real}, predicha {r.pred} "
-                     f"(P(conflicto) = {prob[k_conf]:.2f})", fontsize=8, loc="left")
-        x, yv = 0.0, 0.62
-        rend = fig.canvas.get_renderer()
         for tok, v in palabras(sv, i):
-            t = ax.text(x, yv, tok, fontsize=8, transform=ax.transAxes, va="center",
-                        bbox=dict(boxstyle="round,pad=0.15", lw=0,
-                                  fc=cmap(norm(v[k_conf]))))
-            bb = t.get_window_extent(renderer=rend).transformed(ax.transAxes.inverted())
-            x += bb.width + 0.012
-            if x > 0.93:
-                x, yv = 0.0, yv - 0.42
-            filas.append({"ejemplo": titulo, "palabra": tok} |
+            filas.append({"ejemplo": titulo, "fila_pred": i, "real": r.real, "pred": r.pred,
+                          "texto": r.texto, "palabra": tok} |
                          {c: round(float(v[k]), 4) for k, c in enumerate(CLASES)})
-    sm = plt.cm.ScalarMappable(norm=norm, cmap=cmap)
-    cb = fig.colorbar(sm, ax=axs, orientation="horizontal", fraction=0.04, pad=0.02,
-                      aspect=50)
-    cb.set_label("Aporte SHAP a la probabilidad de conflicto", fontsize=7)
+    d = pd.DataFrame(filas)
+    d.to_csv(REPORTS / "shap_ejemplos.csv", index=False)
+    dibujar_local(d, modelo)
+
+
+# Clase según la cual se colorea cada ejemplo: la que explica el resultado.
+CLASE_EJEMPLO = {"Conflicto detectado": "conflicto", "Conflicto perdido": "positiva",
+                 "Queja leída como positiva": "positiva"}
+
+
+def dibujar_local(d, modelo):
+    ejemplos = list(dict.fromkeys(d.ejemplo))
+    fig = plt.figure(figsize=(6.8, 0.6 + 0.95 * len(ejemplos)))
+    norm = TwoSlopeNorm(vcenter=0, vmin=-0.45, vmax=0.45)
+    cmap = plt.get_cmap("PiYG")
+    rend = fig.canvas.get_renderer()
+    y = 0.97
+    for titulo in ejemplos:
+        g = d[d.ejemplo == titulo]
+        clase = CLASE_EJEMPLO.get(titulo, "conflicto")
+        texto = g.texto.iloc[0] if "texto" in g else " ".join(g.palabra)
+        prob = modelo.predict_proba([texto])[0]
+        fig.text(0.01, y, f"{titulo}: anotada {g.real.iloc[0]}, predicha {g.pred.iloc[0]}. "
+                 f"Color: aporte a «{clase}» (P = {prob[CLASES.index(clase)]:.2f})",
+                 fontsize=8, va="top")
+        x, y = 0.01, y - 0.085
+        for _, r in g.iterrows():
+            t = fig.text(x, y, r.palabra, fontsize=8, va="top",
+                         bbox=dict(boxstyle="round,pad=0.15", lw=0, fc=cmap(norm(r[clase]))))
+            bb = t.get_window_extent(renderer=rend).transformed(fig.transFigure.inverted())
+            x += bb.width + 0.008
+            if x > 0.9:
+                x, y = 0.01, y - bb.height - 0.025
+        y -= 0.17
+    cax = fig.add_axes([0.15, 0.06, 0.7, 0.03])
+    cb = fig.colorbar(plt.cm.ScalarMappable(norm=norm, cmap=cmap), cax=cax,
+                      orientation="horizontal")
+    cb.set_label("Aporte SHAP a la probabilidad de la clase indicada", fontsize=7)
     cb.ax.tick_params(labelsize=6)
     fig.savefig(FIGS / "fig9_shap_local.png", dpi=200, bbox_inches="tight")
     plt.close(fig)
-    pd.DataFrame(filas).to_csv(REPORTS / "shap_ejemplos.csv", index=False)
 
 
 def fig_prueba():
@@ -166,9 +184,26 @@ def fig_prueba():
     plt.close(fig)
 
 
+def solo_figuras(modelo, pred):
+    """Redibuja las figuras con los aportes ya guardados (SHAP tarda mucho)."""
+    fig_prueba()
+    fig_global(pd.read_csv(REPORTS / "shap_global.csv"))
+    d = pd.read_csv(REPORTS / "shap_ejemplos.csv")
+    if "real" not in d:   # versión anterior del archivo: completar con las predicciones
+        info = {t: pred.loc[i] for t, i in elegir_ejemplos(pred)}
+        d["real"] = d.ejemplo.map(lambda t: info[t].real)
+        d["pred"] = d.ejemplo.map(lambda t: info[t].pred)
+        d["texto"] = d.ejemplo.map(lambda t: info[t].texto)
+        d.to_csv(REPORTS / "shap_ejemplos.csv", index=False)
+    dibujar_local(d, modelo)
+
+
 def main():
     modelo = joblib.load(ROOT / "models" / "modelo_final.joblib")
     pred = pd.read_csv(REPORTS / "predicciones_prueba.csv")
+    if "--figuras" in sys.argv:
+        solo_figuras(modelo, pred)
+        return
     fig_prueba()
     sv = shap_prueba(modelo, pred)
     d = global_(sv, len(pred))

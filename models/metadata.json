@@ -1,0 +1,26 @@
+{
+ "modelo": "Regresión logística multinomial, class_weight='balanced'",
+ "representacion": "TF-IDF de n-gramas de caracteres (char_wb, 2 a 5), sublinear_tf, min_df=2, max_df=0.95, máx. 60 000",
+ "C": 0.3,
+ "entrenamiento": "oro + débil",
+ "n_entrenamiento": 18495,
+ "clases": [
+  "negativa",
+  "positiva",
+  "conflicto"
+ ],
+ "enmascara_entidades": true,
+ "semilla": 42,
+ "fecha_entrenamiento": "2026-11-12",
+ "sklearn": "1.6.1",
+ "prueba_temporal": {
+  "f1_macro": 0.8891453787500283,
+  "f1_negativa": 0.9477611940298507,
+  "f1_positiva": 0.935361216730038,
+  "f1_conflicto": 0.7843137254901961,
+  "prec_conflicto": 0.8,
+  "recall_conflicto": 0.7692307692307693,
+  "exactitud": 0.9278350515463918,
+  "n": 291
+ }
+}

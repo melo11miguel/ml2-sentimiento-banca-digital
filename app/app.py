@@ -24,10 +24,12 @@ from explicar import explicador, palabras  # noqa: E402
 
 COLOR = {"negativa": "#2a78d6", "positiva": "#eb6834", "conflicto": "#1baf7a"}
 EJEMPLOS = [
-    "Excelente app, muy fácil de usar, pero desde la última actualización no me deja entrar",
+    "Es buena pero se cae mucho",
+    "La app es muy práctica, aunque últimamente se demora mucho en abrir",
     "Pésimo servicio, llevo tres días sin poder retirar mi plata",
     "Me encanta, las transferencias llegan al instante y la tarjeta es gratis",
-    "Es buena pero deberían quitar el cobro del 4x1000",
+    # Caso límite conocido: contraste implícito (sin "pero"); el modelo lo lee como negativa.
+    "Funcionaba de maravilla, desde la actualización no abre",
 ]
 
 st.set_page_config(page_title="Sentimiento en banca digital", page_icon="🏦", layout="centered")
