@@ -1,0 +1,136 @@
+{
+ "modelo": "lr_defecto",
+ "segundos": 10.524856090545654,
+ "pliegues": [
+  {
+   "f1_macro_oro": 0.4686470582485362,
+   "f1_conflicto_oro": 0.0,
+   "recall_conflicto_oro": 0.0,
+   "f1_macro_todo": 0.5974889064011247,
+   "accuracy_todo": 0.8918626655852934,
+   "f1_weighted_todo": 0.8847493060722846,
+   "mejores_params": {},
+   "confusion_oro": [
+    [
+     192,
+     11,
+     0
+    ],
+    [
+     2,
+     20,
+     0
+    ],
+    [
+     24,
+     28,
+     0
+    ]
+   ]
+  },
+  {
+   "f1_macro_oro": 0.46014109347442683,
+   "f1_conflicto_oro": 0.0,
+   "recall_conflicto_oro": 0.0,
+   "f1_macro_todo": 0.5983772309309574,
+   "accuracy_todo": 0.8926736955934036,
+   "f1_weighted_todo": 0.8859844072346593,
+   "mejores_params": {},
+   "confusion_oro": [
+    [
+     181,
+     22,
+     0
+    ],
+    [
+     1,
+     21,
+     0
+    ],
+    [
+     35,
+     16,
+     0
+    ]
+   ]
+  },
+  {
+   "f1_macro_oro": 0.5046515597661417,
+   "f1_conflicto_oro": 0.0,
+   "recall_conflicto_oro": 0.0,
+   "f1_macro_todo": 0.6094922570487619,
+   "accuracy_todo": 0.9088942957556096,
+   "f1_weighted_todo": 0.9023349014298186,
+   "mejores_params": {},
+   "confusion_oro": [
+    [
+     195,
+     8,
+     0
+    ],
+    [
+     0,
+     22,
+     0
+    ],
+    [
+     30,
+     21,
+     0
+    ]
+   ]
+  },
+  {
+   "f1_macro_oro": 0.4943667443667444,
+   "f1_conflicto_oro": 0.0,
+   "recall_conflicto_oro": 0.0,
+   "f1_macro_todo": 0.6046210517914705,
+   "accuracy_todo": 0.9018653690186537,
+   "f1_weighted_todo": 0.8951715838623145,
+   "mejores_params": {},
+   "confusion_oro": [
+    [
+     193,
+     10,
+     0
+    ],
+    [
+     1,
+     21,
+     0
+    ],
+    [
+     32,
+     19,
+     0
+    ]
+   ]
+  },
+  {
+   "f1_macro_oro": 0.44664971705076684,
+   "f1_conflicto_oro": 0.0,
+   "recall_conflicto_oro": 0.0,
+   "f1_macro_todo": 0.6052788878949933,
+   "accuracy_todo": 0.902676399026764,
+   "f1_weighted_todo": 0.8959985919858439,
+   "mejores_params": {},
+   "confusion_oro": [
+    [
+     183,
+     19,
+     0
+    ],
+    [
+     2,
+     20,
+     0
+    ],
+    [
+     24,
+     28,
+     0
+    ]
+   ]
+  }
+ ]
+}

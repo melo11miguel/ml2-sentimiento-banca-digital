@@ -1,0 +1,21 @@
+Corte por fecha: 2026-10-30 06:56:15. Validación=290, prueba=291
+etiqueta    conflicto  negativa  positiva
+parte                                    
+prueba             26       138       127
+validacion         35       154       101
+
+Experimento 5: validación temporal
+  solo oro                 C=1    F1m=0.790 F1conf=0.614 (64s)
+  oro + débil              C=0.3  F1m=0.840 F1conf=0.687 (118s)
+  oro + débil (peso 0,3)   C=1    F1m=0.831 F1conf=0.667 (98s)
+Variante elegida en validación temporal: oro + débil
+
+Experimento 6: prueba temporal (una sola vez)
+  Regresión logística (final)              (9s)
+/Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+  Stacking                                 (167s)
+  CatBoost                                 (126s)
+  Protocolo del artículo (voto duro)       (91s)
+  Reg. logística por defecto (línea base)  (5s)
+  Mayoría (línea base)                     (1s)

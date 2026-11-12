@@ -1,0 +1,63 @@
+Árbol de decisión         pond=no F1m_oro=0.428 acc=0.824 (21s)
+Regresión logística       pond=no F1m_oro=0.462 acc=0.892 (3s)
+Random Forest             pond=no F1m_oro=0.457 acc=0.879 (70s)
+SVM (lineal)              pond=no F1m_oro=0.455 acc=0.880 (2s)
+XGBoost                   pond=no F1m_oro=0.483 acc=0.874 (64s)
+Voting duro (DT+LR+RF)    pond=no F1m_oro=0.454 acc=0.885 (73s)
+Árbol de decisión         pond=sí F1m_oro=0.493 acc=0.809 (10s)
+Regresión logística       pond=sí F1m_oro=0.606 acc=0.875 (2s)
+Random Forest             pond=sí F1m_oro=0.450 acc=0.879 (38s)
+SVM (lineal)              pond=sí F1m_oro=0.502 acc=0.876 (1s)
+XGBoost                   pond=sí F1m_oro=0.586 acc=0.864 (32s)
+Voting duro (DT+LR+RF)    pond=sí F1m_oro=0.515 acc=0.882 (60s)
+LR  articulo      ninguno      F1m_oro=0.462±0.015 F1conf=0.000
+LR  articulo      ponderacion  F1m_oro=0.606±0.024 F1conf=0.411
+/Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/base.py:474: FutureWarning: `BaseEstimator._validate_data` is deprecated in 1.6 and will be removed in 1.7. Use `sklearn.utils.validation.validate_data` instead. This function becomes public and is part of the scikit-learn developer API.
+  warnings.warn(
+/Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/base.py:474: FutureWarning: `BaseEstimator._validate_data` is deprecated in 1.6 and will be removed in 1.7. Use `sklearn.utils.validation.validate_data` instead. This function becomes public and is part of the scikit-learn developer API.
+  warnings.warn(
+/Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/base.py:474: FutureWarning: `BaseEstimator._validate_data` is deprecated in 1.6 and will be removed in 1.7. Use `sklearn.utils.validation.validate_data` instead. This function becomes public and is part of the scikit-learn developer API.
+  warnings.warn(
+/Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/base.py:474: FutureWarning: `BaseEstimator._validate_data` is deprecated in 1.6 and will be removed in 1.7. Use `sklearn.utils.validation.validate_data` instead. This function becomes public and is part of the scikit-learn developer API.
+  warnings.warn(
+/Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/base.py:474: FutureWarning: `BaseEstimator._validate_data` is deprecated in 1.6 and will be removed in 1.7. Use `sklearn.utils.validation.validate_data` instead. This function becomes public and is part of the scikit-learn developer API.
+  warnings.warn(
+LR  articulo      smote        F1m_oro=0.604±0.013 F1conf=0.410
+LR  uni           ninguno      F1m_oro=0.469±0.009 F1conf=0.015
+LR  uni           ponderacion  F1m_oro=0.669±0.025 F1conf=0.580
+/Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/base.py:474: FutureWarning: `BaseEstimator._validate_data` is deprecated in 1.6 and will be removed in 1.7. Use `sklearn.utils.validation.validate_data` instead. This function becomes public and is part of the scikit-learn developer API.
+  warnings.warn(
+/Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/base.py:474: FutureWarning: `BaseEstimator._validate_data` is deprecated in 1.6 and will be removed in 1.7. Use `sklearn.utils.validation.validate_data` instead. This function becomes public and is part of the scikit-learn developer API.
+  warnings.warn(
+/Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/base.py:474: FutureWarning: `BaseEstimator._validate_data` is deprecated in 1.6 and will be removed in 1.7. Use `sklearn.utils.validation.validate_data` instead. This function becomes public and is part of the scikit-learn developer API.
+  warnings.warn(
+/Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/base.py:474: FutureWarning: `BaseEstimator._validate_data` is deprecated in 1.6 and will be removed in 1.7. Use `sklearn.utils.validation.validate_data` instead. This function becomes public and is part of the scikit-learn developer API.
+  warnings.warn(
+/Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/base.py:474: FutureWarning: `BaseEstimator._validate_data` is deprecated in 1.6 and will be removed in 1.7. Use `sklearn.utils.validation.validate_data` instead. This function becomes public and is part of the scikit-learn developer API.
+  warnings.warn(
+LR  uni           smote        F1m_oro=0.654±0.027 F1conf=0.549
+LR  uni_bi        ninguno      F1m_oro=0.472±0.022 F1conf=0.000
+LR  uni_bi        ponderacion  F1m_oro=0.687±0.023 F1conf=0.582
+/Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/base.py:474: FutureWarning: `BaseEstimator._validate_data` is deprecated in 1.6 and will be removed in 1.7. Use `sklearn.utils.validation.validate_data` instead. This function becomes public and is part of the scikit-learn developer API.
+  warnings.warn(
+/Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/base.py:474: FutureWarning: `BaseEstimator._validate_data` is deprecated in 1.6 and will be removed in 1.7. Use `sklearn.utils.validation.validate_data` instead. This function becomes public and is part of the scikit-learn developer API.
+  warnings.warn(
+/Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/base.py:474: FutureWarning: `BaseEstimator._validate_data` is deprecated in 1.6 and will be removed in 1.7. Use `sklearn.utils.validation.validate_data` instead. This function becomes public and is part of the scikit-learn developer API.
+  warnings.warn(
+/Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/base.py:474: FutureWarning: `BaseEstimator._validate_data` is deprecated in 1.6 and will be removed in 1.7. Use `sklearn.utils.validation.validate_data` instead. This function becomes public and is part of the scikit-learn developer API.
+  warnings.warn(
+/Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/base.py:474: FutureWarning: `BaseEstimator._validate_data` is deprecated in 1.6 and will be removed in 1.7. Use `sklearn.utils.validation.validate_data` instead. This function becomes public and is part of the scikit-learn developer API.
+  warnings.warn(
+LR  uni_bi        smote        F1m_oro=0.674±0.029 F1conf=0.556
+LR  char          ninguno      F1m_oro=0.475±0.020 F1conf=0.008
+LR  char          ponderacion  F1m_oro=0.700±0.024 F1conf=0.635
+/Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/base.py:474: FutureWarning: `BaseEstimator._validate_data` is deprecated in 1.6 and will be removed in 1.7. Use `sklearn.utils.validation.validate_data` instead. This function becomes public and is part of the scikit-learn developer API.
+  warnings.warn(
+/Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/base.py:474: FutureWarning: `BaseEstimator._validate_data` is deprecated in 1.6 and will be removed in 1.7. Use `sklearn.utils.validation.validate_data` instead. This function becomes public and is part of the scikit-learn developer API.
+  warnings.warn(
+/Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/base.py:474: FutureWarning: `BaseEstimator._validate_data` is deprecated in 1.6 and will be removed in 1.7. Use `sklearn.utils.validation.validate_data` instead. This function becomes public and is part of the scikit-learn developer API.
+  warnings.warn(
+/Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/base.py:474: FutureWarning: `BaseEstimator._validate_data` is deprecated in 1.6 and will be removed in 1.7. Use `sklearn.utils.validation.validate_data` instead. This function becomes public and is part of the scikit-learn developer API.
+  warnings.warn(
+/Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/base.py:474: FutureWarning: `BaseEstimator._validate_data` is deprecated in 1.6 and will be removed in 1.7. Use `sklearn.utils.validation.validate_data` instead. This function becomes public and is part of the scikit-learn developer API.
+  warnings.warn(

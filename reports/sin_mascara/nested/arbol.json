@@ -1,0 +1,151 @@
+{
+ "modelo": "arbol",
+ "segundos": 81.2393229007721,
+ "pliegues": [
+  {
+   "f1_macro_oro": 0.6290409888603496,
+   "f1_conflicto_oro": 0.5647058823529412,
+   "recall_conflicto_oro": 0.46153846153846156,
+   "f1_macro_todo": 0.6129104726007366,
+   "accuracy_todo": 0.8050824547174912,
+   "f1_weighted_todo": 0.8186402664583967,
+   "mejores_params": {
+    "clf__max_depth": "20",
+    "clf__min_samples_leaf": "5"
+   },
+   "confusion_oro": [
+    [
+     161,
+     33,
+     9
+    ],
+    [
+     1,
+     21,
+     0
+    ],
+    [
+     16,
+     12,
+     24
+    ]
+   ]
+  },
+  {
+   "f1_macro_oro": 0.6502316840024626,
+   "f1_conflicto_oro": 0.6222222222222222,
+   "recall_conflicto_oro": 0.5490196078431373,
+   "f1_macro_todo": 0.6243097700667315,
+   "accuracy_todo": 0.805352798053528,
+   "f1_weighted_todo": 0.8173851587955597,
+   "mejores_params": {
+    "clf__max_depth": "20",
+    "clf__min_samples_leaf": "1"
+   },
+   "confusion_oro": [
+    [
+     159,
+     33,
+     11
+    ],
+    [
+     2,
+     20,
+     0
+    ],
+    [
+     17,
+     6,
+     28
+    ]
+   ]
+  },
+  {
+   "f1_macro_oro": 0.5597612963457195,
+   "f1_conflicto_oro": 0.5116279069767442,
+   "recall_conflicto_oro": 0.43137254901960786,
+   "f1_macro_todo": 0.6167648451413706,
+   "accuracy_todo": 0.8115706947823736,
+   "f1_weighted_todo": 0.8233901661458859,
+   "mejores_params": {
+    "clf__max_depth": "20",
+    "clf__min_samples_leaf": "5"
+   },
+   "confusion_oro": [
+    [
+     142,
+     49,
+     12
+    ],
+    [
+     1,
+     20,
+     1
+    ],
+    [
+     15,
+     14,
+     22
+    ]
+   ]
+  },
+  {
+   "f1_macro_oro": 0.6020534580481308,
+   "f1_conflicto_oro": 0.5,
+   "recall_conflicto_oro": 0.39215686274509803,
+   "f1_macro_todo": 0.6296455633288586,
+   "accuracy_todo": 0.825087861584212,
+   "f1_weighted_todo": 0.8328562782210914,
+   "mejores_params": {
+    "clf__max_depth": "20",
+    "clf__min_samples_leaf": "1"
+   },
+   "confusion_oro": [
+    [
+     165,
+     30,
+     8
+    ],
+    [
+     2,
+     19,
+     1
+    ],
+    [
+     19,
+     12,
+     20
+    ]
+   ]
+  },
+  {
+   "f1_macro_oro": 0.5679220167488082,
+   "f1_conflicto_oro": 0.4578313253012048,
+   "recall_conflicto_oro": 0.36538461538461536,
+   "f1_macro_todo": 0.5984357743930399,
+   "accuracy_todo": 0.8034603947012706,
+   "f1_weighted_todo": 0.8195938055356197,
+   "mejores_params": {
+    "clf__max_depth": "20",
+    "clf__min_samples_leaf": "5"
+   },
+   "confusion_oro": [
+    [
+     157,
+     36,
+     9
+    ],
+    [
+     0,
+     19,
+     3
+    ],
+    [
+     18,
+     15,
+     19
+    ]
+   ]
+  }
+ ]
+}

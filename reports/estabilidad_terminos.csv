@@ -1,0 +1,4 @@
+clase,jaccard_medio,jaccard_min
+negativa,0.715,0.613
+positiva,0.856,0.724
+conflicto,0.596,0.471

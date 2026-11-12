@@ -1,0 +1,76 @@
+clase,rank,termino,coef
+negativa,1,no,4.04
+negativa,2,mala,2.186
+negativa,3,pesima,1.758
+negativa,4,peor,1.597
+negativa,5,no me,1.444
+negativa,6,pesimo,1.389
+negativa,7,muy mala,1.378
+negativa,8,se,1.36
+negativa,9,deja,1.341
+negativa,10,nada,1.324
+negativa,11,mal,1.308
+negativa,12,uno,1.197
+negativa,13,ni,1.185
+negativa,14,llevo,1.157
+negativa,15,lenta,1.139
+negativa,16,actualizacion,1.136
+negativa,17,ingresar,1.096
+negativa,18,mas de,1.023
+negativa,19,sigue,1.006
+negativa,20,no funciona,0.969
+negativa,21,abre,0.953
+negativa,22,celular,0.952
+negativa,23,no sirve,0.924
+negativa,24,dice,0.903
+negativa,25,muy mal,0.895
+positiva,1,excelente,3.873
+positiva,2,muy,2.632
+positiva,3,gracias,2.311
+positiva,4,facil,1.913
+positiva,5,nu,1.802
+positiva,6,mejor,1.764
+positiva,7,buena,1.454
+positiva,8,super,1.416
+positiva,9,encanta,1.398
+positiva,10,me encanta,1.361
+positiva,11,exelente,1.306
+positiva,12,genial,1.298
+positiva,13,rapido,1.297
+positiva,14,facil de,1.251
+positiva,15,buen,1.172
+positiva,16,muy buena,1.164
+positiva,17,lo mejor,1.099
+positiva,18,confiable,1.073
+positiva,19,la mejor,1.018
+positiva,20,tarjeta,1.014
+positiva,21,gusta,1.01
+positiva,22,de usar,0.972
+positiva,23,recomiendo,0.912
+positiva,24,me gusta,0.885
+positiva,25,gracias por,0.859
+conflicto,1,pero,7.963
+conflicto,2,buena,2.695
+conflicto,3,bien,2.5
+conflicto,4,aunque,2.499
+conflicto,5,es que,2.434
+conflicto,6,que,2.278
+conflicto,7,solo,2.184
+conflicto,8,habia,2.123
+conflicto,9,es buena,2.012
+conflicto,10,en,1.916
+conflicto,11,por,1.868
+conflicto,12,buena pero,1.753
+conflicto,13,fallas,1.725
+conflicto,14,tiene,1.547
+conflicto,15,app pero,1.503
+conflicto,16,bien hasta,1.477
+conflicto,17,sin embargo,1.465
+conflicto,18,embargo,1.454
+conflicto,19,es,1.437
+conflicto,20,hasta,1.424
+conflicto,21,habia tenido,1.399
+conflicto,22,rendimientos,1.398
+conflicto,23,tarda,1.385
+conflicto,24,pero ultimamente,1.382
+conflicto,25,bueno,1.338

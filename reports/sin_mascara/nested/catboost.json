@@ -1,0 +1,136 @@
+{
+ "modelo": "catboost",
+ "segundos": 322.40678334236145,
+ "pliegues": [
+  {
+   "f1_macro_oro": 0.7079861111111111,
+   "f1_conflicto_oro": 0.7333333333333333,
+   "recall_conflicto_oro": 0.6346153846153846,
+   "f1_macro_todo": 0.6701849826220477,
+   "accuracy_todo": 0.8480670451473371,
+   "f1_weighted_todo": 0.8582613158524418,
+   "mejores_params": {},
+   "confusion_oro": [
+    [
+     171,
+     27,
+     5
+    ],
+    [
+     2,
+     20,
+     0
+    ],
+    [
+     8,
+     11,
+     33
+    ]
+   ]
+  },
+  {
+   "f1_macro_oro": 0.684341743030287,
+   "f1_conflicto_oro": 0.6896551724137931,
+   "recall_conflicto_oro": 0.5882352941176471,
+   "f1_macro_todo": 0.6530968212348752,
+   "accuracy_todo": 0.83779399837794,
+   "f1_weighted_todo": 0.8493158450937913,
+   "mejores_params": {},
+   "confusion_oro": [
+    [
+     163,
+     34,
+     6
+    ],
+    [
+     1,
+     21,
+     0
+    ],
+    [
+     16,
+     5,
+     30
+    ]
+   ]
+  },
+  {
+   "f1_macro_oro": 0.6694395966647275,
+   "f1_conflicto_oro": 0.6444444444444445,
+   "recall_conflicto_oro": 0.5686274509803921,
+   "f1_macro_todo": 0.6683622788137238,
+   "accuracy_todo": 0.8534739118680724,
+   "f1_weighted_todo": 0.8630970399092989,
+   "mejores_params": {},
+   "confusion_oro": [
+    [
+     165,
+     30,
+     8
+    ],
+    [
+     0,
+     20,
+     2
+    ],
+    [
+     14,
+     8,
+     29
+    ]
+   ]
+  },
+  {
+   "f1_macro_oro": 0.6902309131659573,
+   "f1_conflicto_oro": 0.6896551724137931,
+   "recall_conflicto_oro": 0.5882352941176471,
+   "f1_macro_todo": 0.6674493138778853,
+   "accuracy_todo": 0.8491484184914841,
+   "f1_weighted_todo": 0.858669375197008,
+   "mejores_params": {},
+   "confusion_oro": [
+    [
+     168,
+     29,
+     6
+    ],
+    [
+     2,
+     20,
+     0
+    ],
+    [
+     14,
+     7,
+     30
+    ]
+   ]
+  },
+  {
+   "f1_macro_oro": 0.6849395814913056,
+   "f1_conflicto_oro": 0.7032967032967034,
+   "recall_conflicto_oro": 0.6153846153846154,
+   "f1_macro_todo": 0.6657658400481984,
+   "accuracy_todo": 0.8480670451473371,
+   "f1_weighted_todo": 0.8593477191773083,
+   "mejores_params": {},
+   "confusion_oro": [
+    [
+     165,
+     32,
+     5
+    ],
+    [
+     0,
+     20,
+     2
+    ],
+    [
+     10,
+     10,
+     32
+    ]
+   ]
+  }
+ ]
+}

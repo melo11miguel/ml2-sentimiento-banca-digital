@@ -1,0 +1,124 @@
+  lr pliegue 1: F1m_oro=0.748 {'clf__C': '0.3'}
+  lr pliegue 2: F1m_oro=0.741 {'clf__C': '0.3'}
+  lr pliegue 3: F1m_oro=0.717 {'clf__C': '0.3'}
+  lr pliegue 4: F1m_oro=0.749 {'clf__C': '0.3'}
+  lr pliegue 5: F1m_oro=0.666 {'clf__C': '0.1'}
+lr: F1 macro oro = 0.724 ± 0.035 (2.9 min)
+  svm pliegue 1: F1m_oro=0.655 {'clf__C': '0.1'}
+  svm pliegue 2: F1m_oro=0.677 {'clf__C': '0.03'}
+  svm pliegue 3: F1m_oro=0.631 {'clf__C': '0.1'}
+  svm pliegue 4: F1m_oro=0.635 {'clf__C': '0.03'}
+  svm pliegue 5: F1m_oro=0.590 {'clf__C': '0.03'}
+svm: F1 macro oro = 0.638 ± 0.032 (3.8 min)
+/Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+  lightgbm pliegue 1: F1m_oro=0.672 {'clf__num_leaves': '15'}
+/Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+  lightgbm pliegue 2: F1m_oro=0.614 {'clf__num_leaves': '15'}
+/Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+  lightgbm pliegue 3: F1m_oro=0.586 {'clf__num_leaves': '15'}
+/Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+  lightgbm pliegue 4: F1m_oro=0.647 {'clf__num_leaves': '15'}
+/Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+  lightgbm pliegue 5: F1m_oro=0.584 {'clf__num_leaves': '15'}
+lightgbm: F1 macro oro = 0.621 ± 0.039 (8.2 min)
+  arbol pliegue 1: F1m_oro=0.629 {'clf__max_depth': '20', 'clf__min_samples_leaf': '5'}
+  arbol pliegue 2: F1m_oro=0.650 {'clf__max_depth': '20', 'clf__min_samples_leaf': '1'}
+  arbol pliegue 3: F1m_oro=0.560 {'clf__max_depth': '20', 'clf__min_samples_leaf': '5'}
+  arbol pliegue 4: F1m_oro=0.602 {'clf__max_depth': '20', 'clf__min_samples_leaf': '1'}
+  arbol pliegue 5: F1m_oro=0.568 {'clf__max_depth': '20', 'clf__min_samples_leaf': '5'}
+arbol: F1 macro oro = 0.602 ± 0.039 (1.4 min)
+  xgboost pliegue 1: F1m_oro=0.686 {'clf__max_depth': '4'}
+  xgboost pliegue 2: F1m_oro=0.650 {'clf__max_depth': '4'}
+  xgboost pliegue 3: F1m_oro=0.633 {'clf__max_depth': '4'}
+  xgboost pliegue 4: F1m_oro=0.667 {'clf__max_depth': '4'}
+  xgboost pliegue 5: F1m_oro=0.634 {'clf__max_depth': '4'}
+xgboost: F1 macro oro = 0.654 ± 0.023 (8.6 min)
+  voting_suave pliegue 1: F1m_oro=0.611 {}
+  voting_suave pliegue 2: F1m_oro=0.549 {}
+  voting_suave pliegue 3: F1m_oro=0.586 {}
+  voting_suave pliegue 4: F1m_oro=0.592 {}
+  voting_suave pliegue 5: F1m_oro=0.538 {}
+voting_suave: F1 macro oro = 0.575 ± 0.031 (3.5 min)
+  catboost pliegue 1: F1m_oro=0.708 {}
+  catboost pliegue 2: F1m_oro=0.684 {}
+  catboost pliegue 3: F1m_oro=0.669 {}
+  catboost pliegue 4: F1m_oro=0.690 {}
+  catboost pliegue 5: F1m_oro=0.685 {}
+catboost: F1 macro oro = 0.687 ± 0.014 (5.6 min)
+  random_forest pliegue 1: F1m_oro=0.585 {'clf__min_samples_leaf': '3'}
+  random_forest pliegue 2: F1m_oro=0.521 {'clf__min_samples_leaf': '3'}
+  random_forest pliegue 3: F1m_oro=0.541 {'clf__min_samples_leaf': '3'}
+  random_forest pliegue 4: F1m_oro=0.561 {'clf__min_samples_leaf': '3'}
+  random_forest pliegue 5: F1m_oro=0.555 {'clf__min_samples_leaf': '3'}
+random_forest: F1 macro oro = 0.553 ± 0.024 (6.2 min)
+/Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+  stacking pliegue 1: F1m_oro=0.775 {}
+/Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+  stacking pliegue 2: F1m_oro=0.708 {}
+/Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+  stacking pliegue 3: F1m_oro=0.695 {}
+/Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+  stacking pliegue 4: F1m_oro=0.731 {}
+/Users/melo/Desktop/ml2-banca/.venv/lib/python3.9/site-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+  stacking pliegue 5: F1m_oro=0.681 {}
+stacking: F1 macro oro = 0.718 ± 0.037 (8.1 min)

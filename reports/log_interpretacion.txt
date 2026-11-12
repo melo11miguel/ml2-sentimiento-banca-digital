@@ -1,0 +1,26 @@
+Configuración modal: rep=char, C=0.3  (4/5 pliegues)
+                        n_entrenamiento_mean  ...  f1_conflicto_oro_mean
+entrenamiento                                 ...                       
+oro + débil                          14796.0  ...                  0.692
+oro + débil (peso 0,3)               14796.0  ...                  0.665
+solo oro                              1104.8  ...                  0.682
+
+[3 rows x 4 columns]
+       clase  jaccard_medio  jaccard_min
+0   negativa          0.715        0.613
+1   positiva          0.856        0.724
+2  conflicto          0.596        0.471
+real       pred     
+conflicto  negativa     46
+           positiva     44
+negativa   conflicto    54
+           positiva     87
+positiva   conflicto     5
+           negativa      4
+dtype: int64
+Exactitud en oro por entidad:
+ entidad
+DaviPlata    0.882
+Nequi        0.819
+Nu           0.709
+Name: ok, dtype: float64

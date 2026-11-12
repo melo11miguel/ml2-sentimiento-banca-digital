@@ -1,0 +1,12 @@
+clave,modelo,f1,sd,f1_conf,f1_conf_sd,acc,min
+mayoria,Mayoría (línea base),0.2823,0.0004,0.0,0.0,0.5314,0.1042
+lr_defecto,Reg. logística por defecto (línea base),0.4749,0.0241,0.0,0.0,0.8996,0.1754
+random_forest,Random Forest,0.5528,0.024,0.2314,0.0532,0.8786,6.2124
+voting_suave,Voting suave,0.5751,0.0306,0.2972,0.0385,0.8982,3.4888
+arbol,Árbol de decisión,0.6018,0.0387,0.5313,0.0635,0.8101,1.354
+lightgbm,LightGBM,0.6205,0.0385,0.4741,0.0846,0.8822,8.2231
+svm,SVM lineal,0.6376,0.0321,0.4361,0.0766,0.8894,3.8238
+xgboost,XGBoost,0.6541,0.0226,0.5789,0.0272,0.8717,8.5614
+catboost,CatBoost,0.6874,0.0139,0.6921,0.032,0.8473,5.3734
+stacking,Stacking,0.718,0.0367,0.6884,0.0272,0.8459,8.0942
+lr,Regresión logística,0.7242,0.0351,0.6864,0.0402,0.8606,2.9215

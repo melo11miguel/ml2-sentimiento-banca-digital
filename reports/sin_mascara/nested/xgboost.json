@@ -1,0 +1,146 @@
+{
+ "modelo": "xgboost",
+ "segundos": 513.6831488609314,
+ "pliegues": [
+  {
+   "f1_macro_oro": 0.6861510036113211,
+   "f1_conflicto_oro": 0.6172839506172839,
+   "recall_conflicto_oro": 0.4807692307692308,
+   "f1_macro_todo": 0.691671026251623,
+   "accuracy_todo": 0.8669910786699108,
+   "f1_weighted_todo": 0.8705168951288208,
+   "mejores_params": {
+    "clf__max_depth": "4"
+   },
+   "confusion_oro": [
+    [
+     176,
+     23,
+     4
+    ],
+    [
+     0,
+     22,
+     0
+    ],
+    [
+     13,
+     14,
+     25
+    ]
+   ]
+  },
+  {
+   "f1_macro_oro": 0.6496701702256136,
+   "f1_conflicto_oro": 0.5789473684210527,
+   "recall_conflicto_oro": 0.43137254901960786,
+   "f1_macro_todo": 0.6701388367263297,
+   "accuracy_todo": 0.8596918085969181,
+   "f1_weighted_todo": 0.8645332170596904,
+   "mejores_params": {
+    "clf__max_depth": "4"
+   },
+   "confusion_oro": [
+    [
+     169,
+     31,
+     3
+    ],
+    [
+     1,
+     21,
+     0
+    ],
+    [
+     21,
+     8,
+     22
+    ]
+   ]
+  },
+  {
+   "f1_macro_oro": 0.6333265825651612,
+   "f1_conflicto_oro": 0.5405405405405406,
+   "recall_conflicto_oro": 0.39215686274509803,
+   "f1_macro_todo": 0.691345173886285,
+   "accuracy_todo": 0.8799675587996756,
+   "f1_weighted_todo": 0.8825845655444283,
+   "mejores_params": {
+    "clf__max_depth": "4"
+   },
+   "confusion_oro": [
+    [
+     174,
+     27,
+     2
+    ],
+    [
+     1,
+     20,
+     1
+    ],
+    [
+     16,
+     15,
+     20
+    ]
+   ]
+  },
+  {
+   "f1_macro_oro": 0.6671948509477974,
+   "f1_conflicto_oro": 0.5753424657534246,
+   "recall_conflicto_oro": 0.4117647058823529,
+   "f1_macro_todo": 0.6886722679765916,
+   "accuracy_todo": 0.8775344687753447,
+   "f1_weighted_todo": 0.8807879183218426,
+   "mejores_params": {
+    "clf__max_depth": "4"
+   },
+   "confusion_oro": [
+    [
+     178,
+     24,
+     1
+    ],
+    [
+     1,
+     21,
+     0
+    ],
+    [
+     19,
+     11,
+     21
+    ]
+   ]
+  },
+  {
+   "f1_macro_oro": 0.6342306392350548,
+   "f1_conflicto_oro": 0.5822784810126582,
+   "recall_conflicto_oro": 0.4423076923076923,
+   "f1_macro_todo": 0.6857666451428265,
+   "accuracy_todo": 0.8742903487429035,
+   "f1_weighted_todo": 0.8789238141168613,
+   "mejores_params": {
+    "clf__max_depth": "4"
+   },
+   "confusion_oro": [
+    [
+     170,
+     30,
+     2
+    ],
+    [
+     1,
+     19,
+     2
+    ],
+    [
+     14,
+     15,
+     23
+    ]
+   ]
+  }
+ ]
+}

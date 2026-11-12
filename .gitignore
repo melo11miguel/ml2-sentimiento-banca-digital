@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+.DS_Store
+src/catboost_info/
+catboost_info/
+# Crudos originales sin anonimizar: solo locales
+data/raw_original/
+# Ensayo del flujo con anotaciones ficticias (no son resultados)
+*_SIMULADO*
+*_SIMULADA*
+src/simular_anotacion.py
+informe/*BORRADOR*
+# Auxiliares de LaTeX
+informe/*.aux
+informe/*.log
+informe/*.out
+informe/*.toc

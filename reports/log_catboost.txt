@@ -1,0 +1,6 @@
+  catboost pliegue 1: F1m_oro=0.708 {}
+  catboost pliegue 2: F1m_oro=0.684 {}
+  catboost pliegue 3: F1m_oro=0.669 {}
+  catboost pliegue 4: F1m_oro=0.690 {}
+  catboost pliegue 5: F1m_oro=0.685 {}
+catboost: F1 macro oro = 0.687 ± 0.014 (5.4 min)
