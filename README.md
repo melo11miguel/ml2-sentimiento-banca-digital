@@ -40,6 +40,15 @@ devuelve la clase y las probabilidades, y explica la predicción con SHAP por pa
 `models/modelo_final.joblib`, que trae la normalización y el enmascaramiento de entidades
 dentro del Pipeline, así que aplica exactamente el mismo preprocesamiento que en la evaluación.
 
+### Versión web (Vercel)
+
+Vercel no ejecuta Streamlit, así que `web/` es una versión estática del mismo modelo que corre
+en el navegador: `src/16_exportar_web.py` exporta vocabulario, IDF y coeficientes a
+`web/model.json`, y `web/modelo.js` reimplementa la normalización, el TF-IDF de caracteres y la
+regresión logística. Las explicaciones son valores de Shapley por palabra (exactos hasta 12
+palabras; con más, estimados por permutaciones). `node tests/check_web.mjs` (o `npm test`)
+comprueba que la web da las mismas probabilidades que sklearn en 4 307 reseñas.
+
 | Script | Qué hace |
 |---|---|
 | `src/01_scrape.py` | Extrae 10 000 reseñas por app (Nequi, DaviPlata, Nu) de Google Play Colombia |
@@ -59,7 +68,9 @@ dentro del Pipeline, así que aplica exactamente el mismo preprocesamiento que e
 | `src/14_evaluacion_temporal.py` | Validación y prueba temporal, modelo final y su versión de despliegue |
 | `src/15_interpretacion_final.py` | SHAP global y local, y figuras de la entrega final |
 | `src/explicar.py` | Explicaciones SHAP por palabra (las usa también la app) |
+| `src/16_exportar_web.py` | Exporta el modelo final a `web/model.json` y la referencia de paridad |
 | `app/app.py` | Despliegue en Streamlit |
+| `web/` | Versión web estática del mismo modelo (Vercel) |
 
 ## Etiquetado
 
