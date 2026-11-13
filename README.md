@@ -42,6 +42,8 @@ dentro del Pipeline, así que aplica exactamente el mismo preprocesamiento que e
 
 ### Versión web (Vercel)
 
+Publicada en https://sentimiento-banca-digital.vercel.app (se actualiza con cada push a `main`).
+
 Vercel no ejecuta Streamlit, así que `web/` es una versión estática del mismo modelo que corre
 en el navegador: `src/16_exportar_web.py` exporta vocabulario, IDF y coeficientes a
 `web/model.json`, y `web/modelo.js` reimplementa la normalización, el TF-IDF de caracteres y la
